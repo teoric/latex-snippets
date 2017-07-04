@@ -9,7 +9,7 @@
 
 labels generated with `label-clean`
 
-``{elisp}
+``elisp
 (defun clean-label (str)
   "Prepare STR to be usable as label."
   (replace-regexp-in-string
