@@ -13,23 +13,33 @@ labels generated with `clean-label`
 
 ```elisp
 (defun clean-label (str)
-  "Prepare STR to be usable as label."
+  "Prepare STR to be usable as (La)TeX label."
+  ;; replace spaces by dash
   (replace-regexp-in-string
-   "[^[:ascii:]]" ""
+   "[[:space:]]" "-"
+   ;; remove rest, e.g., remaining accents
    (replace-regexp-in-string
-    "[[:space:]]" "-"
+    "[^[:ascii:]]" ""
+    ;; decompose to get rid of accents
     (ucs-normalize-NFD-string
+     ;; treat special characters (mostly for German)
      (replace-regexp-in-string
-      "ä" "ae"
+      "æ" "ae"
       (replace-regexp-in-string
-       "ö" "oe"
+       "ø" "oe"
        (replace-regexp-in-string
-        "ü" "ue"
+        "œ" "oe"
         (replace-regexp-in-string
-         "ß" "ss"
-        (replace-regexp-in-string
-         "ł" "l"
-         (downcase str))))))))))
+         "ä" "ae"
+         (replace-regexp-in-string
+          "ö" "oe"
+          (replace-regexp-in-string
+           "ü" "ue"
+           (replace-regexp-in-string
+            "ß" "ss"
+            (replace-regexp-in-string
+             "ł" "l"
+             (downcase str)))))))))))))
 ```
 
 - `chapter` <kbd>chap</kbd>
