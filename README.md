@@ -9,7 +9,7 @@
 
 labels generated with `label-clean`
 
-``elisp
+```elisp
 (defun clean-label (str)
   "Prepare STR to be usable as label."
   (replace-regexp-in-string
@@ -28,7 +28,7 @@ labels generated with `label-clean`
         (replace-regexp-in-string
          "ł" "l"
          (downcase str))))))))))
-``
+```
 
 - `chapter` <kbd>chap</kbd>
 - `section` <kbd>sec</kbd>
