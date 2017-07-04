@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# from: https://tex.stackexchange.com/questions/31966/setting-up-reftex-with-biblatex-citation-commands
+# name: fullcite
+# key: ct
+# --
+\fullcite[$3]{${2:label$(unless yas/modified-p (reftex-citation 'dont-insert))}}$0

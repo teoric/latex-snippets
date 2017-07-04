@@ -1,8 +1,10 @@
 # Some LaTeX Snippets for Emacs [YaSnippet](http://joaotavora.github.io/yasnippet/)
 
 ## Citation
-- `autocite \autocite` <kbd>ct</kbd>
-- `textcite \textcite` <kbd>ct</kbd>
+- `autocite` <kbd>ct</kbd>
+- `fullcite` <kbd>ct</kbd>
+- `parencite` <kbd>ct</kbd>
+- `textcite` <kbd>ct</kbd>
 
 
 ## Sectioning
