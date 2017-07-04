@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: chapter
+# key: chap
+# --
+\chapter{${1:name}}
+\label{chap:${1:$(clean-label yas-text)}}
+
+$0
+
+% chapter ${1:$(clean-label yas-text)}

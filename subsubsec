@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: subsubsec
+# key: ssub
+# --
+\subsubsection{${1:name}}
+\label{sec:${1:$(clean-label yas-text)}}
+
+$0
+
+% subsubsection ${1:$(clean-label yas-text)}
+

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: slide
+# key: sli
+# --
+\begin{slide}
+    $0
+\end{slide}

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: subsecf
+# key: ssecf
+# --
+\subsection{${1:name}}
+\label{sec:${1:$(clean-label yas-text)}}
+\begin{frame}{$1}
+
+$0
+
+\end{frame}
+
+% subsection ${1:$(clean-label yas-text)}
+

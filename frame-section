@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: sectionf
+# key: secf
+# --
+\section{${1:name}}
+\label{sec:${1:$(clean-label yas-text)}}
+\begin{frame}{$1}
+
+$0
+
+\end{frame}
+
+% section ${1:$(clean-label yas-text)}
+
