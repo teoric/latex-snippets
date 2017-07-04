@@ -7,7 +7,7 @@
 
 ## Sectioning
 
-labels generated with `label-clean`
+labels generated with `clean-label`
 
 ```elisp
 (defun clean-label (str)
